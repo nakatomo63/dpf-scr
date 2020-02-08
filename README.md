@@ -11,6 +11,11 @@ is named after *Digital Photo Frame Screen Saver*
 
 ## Update History
 
+### ver.0.15.13 2020/02/09
+* [Chg] GitHubに登録した。Apache License 2.0とした。
+* [Chg] 時計を表示しないときに代表色を求める処理をやめた
+* [Fix] ClockMode==0（表示しない）のときにエラーが出るのを修正
+
 ### ver.0.14.12 2020/01/23
 * [Chg] 代表色を2色抽出して時計とカレンダーにそれぞれ採用するようにした。彩度を調整した。
 * [Chg] configのSizeにショートカットキーを追加。タブオーダーを修正。
