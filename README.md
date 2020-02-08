@@ -1,9 +1,13 @@
 # dpf-scr
-is Digital Photo Frame Screen Saver
+is named after *Digital Photo Frame Screen Saver*
 
 ## Target Platform
 - .NET Framework 4.7.2
-- Windows 10
+
+## Developing Environment
+- Windows 10 1809 Build 17763.973
+- Microsoft Visual Studio 2019 16.4.3
+- C# 7
 
 ## Update History
 
@@ -48,5 +52,7 @@ is Digital Photo Frame Screen Saver
 ### ver.0.02    2010/04/02
 * [Fix] ExposureBiasValue GCD Calculation
 * [Fix] Default File Name Filter set to '.*'
-###ver.0.01    2010/04/02
+### ver.0.01    2010/04/02
 * First Version
+
+[EOF]
