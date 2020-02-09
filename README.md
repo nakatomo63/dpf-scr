@@ -1,6 +1,58 @@
 # dpf-scr
 is named after *Digital Photo Frame Screen Saver*
 
+## Primary Features
+- Picture file selection
+	- Recursive directory scan finds every files in sub directories.
+	- サブディレクトリ内のファイルをすべて抽出できる。
+	- File name filter performs regular expression test to choose your favorite photograph.
+	- ファイル名を正規表現でmatchし，該当するファイルのみを表示する。
+- Rotation mode
+	- 4 mode to order pictures. By Name, by date, random, shuffle.
+	- 画像の表示順は名前順，日付順，ランダム，シャッフルから選択することができる。
+- 5 View mode for multiple display environment
+- 表示モードは五種類から選べる。
+	- *Center*
+		- Place to the center of the target screen
+		- *Center*は拡大縮小をせず，各画面の中央に画像を配置する。
+	- *Tile*
+		- Place to the top-left of the target screen. If the image is smaller than the screen area, the image is tiled.
+		- *Tile*は画面の左上端から画像を配置する。画像が画面サイズより小さければ並べて配置する。
+	- *Fit to screen*
+		- Larger or smaller images are resized to fit to the screen.
+		- *Fit to screen*は大きい画像や小さい画像を縮小して画面に収まるように配置する。
+	- *Fit to screen (keep aspect ratio)*
+		- It is equivalent to the previous option, except the mode keeps the image's aspect ratio.
+		- *Fit to screen (keep aspect ratio)*は基本的にはひとつ前のオプションと同じだが，画像のアスペクト比を保持して縮小する。このとき，画像がcropされないように短い辺を基準とする。
+	- *Intelligent Crop*
+		- This mode is basically the same as the previous option. While *Fit to screen (keep aspect ratio)* option avoid being cropped, this option do not.
+		- In order to this feature, screen black frame (border) are minimized.
+		- *Intelligent Crop*も前項と同様に画像をリサイズするが，一部cropされることを許容して画面に余白が出ないように配置する。
+- Background color can be chose.
+	- 背景色は変更できる。
+- Remove image border
+	- 画像の左右に帯がついている場合，それを除去して描画できる。
+- Target display selection
+	- 画像を表示する画面を選べる。
+	- *Single*
+		- Display to onle one screen.
+		- どれか一つの画面にのみ表示する。
+	- *Clone*
+		- Display to all screens.
+		- すべての画面に表示する。各画面に合わせて表示モードの通りに描画される。
+	- *Span*
+		- Display to the whole screen as they are spanned to big one.
+		- すべての画面を連結して一つの画面だとして描画する。画面がずれて配置されている場合には画像の一部が切れることがある。
+- Exif information display
+- 画像ファイルのExif情報を読み取り，主要な撮影データを表示することができる。
+- Digital clock
+- デジタル時計を表示することができる。
+	- Its size and position can be adjusted.
+	- 時計の大きさと表示位置が調整できる。
+	- Its color can chose both manually or automatically. Automatic color choose method can detect representing color from the image currently viewed.
+	- 時計の表示色は手動で決めることもできるし，自動で選択することもできる。自動色選択は，現在表示している画像の代表色を抽出して決定する。
+
+
 ## Target Platform
 - .NET Framework 4.7.2
 
