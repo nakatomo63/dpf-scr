@@ -4,6 +4,8 @@ is named after *Digital Photo Frame Screen Saver*
 ## Screen Shot
 ![Dual Display Sample](https://github.com/nakatomo63/dpf-scr/blob/master/images/sample.jpg)
 
+![Setting Form](https://github.com/nakatomo63/dpf-scr/blob/master/images/setting.png)
+
 ## Primary Features
 - Picture file selection
 	- Recursive directory scan finds every files in sub directories.
